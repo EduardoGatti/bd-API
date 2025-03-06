@@ -7,7 +7,6 @@ const dbConfig = {
   password: process.env.MYSQL_PWD || "sOhxxsQNuZQsOPvSfRedyLLNFrVnZsZI",
   database: process.env.MYSQL_DB || "raiway",
 };
-
 class ConexaoMySql {
   async getConexao() {
     if (!ConexaoMySql.conexao) {
