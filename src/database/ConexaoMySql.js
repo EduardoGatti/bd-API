@@ -1,11 +1,11 @@
 import mysql from "mysql2/promise";
 
 const dbConfig = {
-  host: process.env.MYSQL_HOST || "trolley.proxy.rlwy.net",
-  port: process.env.MYSQL_PORT || "42849",
+  host: process.env.MYSQL_HOST || "trolley.proxy.rlwy.net" || "localhost",
+  port: process.env.MYSQL_PORT || "42849" || "3000",
   user: process.env.MYSQL_USER || "root",
-  password: process.env.MYSQL_PWD || "sOhxxsQNuZQsOPvSfRedyLLNFrVnZsZI",
-  database: process.env.MYSQL_DB || "raiway",
+  password: process.env.MYSQL_PWD || "sOhxxsQNuZQsOPvSfRedyLLNFrVnZsZI" || "senai",
+  database: process.env.MYSQL_DB || "raiway" || "api",
 };
 class ConexaoMySql {
   async getConexao() {
