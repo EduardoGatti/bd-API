@@ -1,6 +1,14 @@
-import ConexaoMySql from "../database/ConexaoMySql";
+import ConexaoMySql from "../database/ConexaoMySql.js";
 
 class AnuncioController{
+
+    async listAnuncio(req, resp) {
+        try {
+            
+        } catch (error) {
+            
+        }
+    }
 
     async addAnuncio(req, resp) {
         
