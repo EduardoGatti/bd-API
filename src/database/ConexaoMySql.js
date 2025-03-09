@@ -7,6 +7,7 @@ import mysql from "mysql2/promise";
 //   password: process.env.MYSQL_PWD ?? "senai",
 //   database: process.env.MYSQL_DB ?? "api",
 // };
+
 const dbConfig = {
   uri: "mysql://root:sOhxxsQNuZQsOPvSfRedyLLNFrVnZsZI@trolley.proxy.rlwy.net:42849/railway"
 };

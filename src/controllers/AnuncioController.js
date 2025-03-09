@@ -5,8 +5,19 @@ class AnuncioController{
     async listAnuncio(req, resp) {
         try {
             
-        } catch (error) {
+            const conexao = await new ConexaoMySql().getConexao();
+            const commandSql = `SELECT * FROM anuncios`
+
+            const filterAnuncio = req.query.filterAnuncio || "";
+            const [resultado] = await conexao.execute(commandSql, [`${filterAnuncio}`]);
+
+            resp.send(
+                resultado
+            )
             
+
+        } catch (error) {
+            resp.status(500).send(error)
         }
     }
 
